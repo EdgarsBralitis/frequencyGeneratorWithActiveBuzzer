@@ -3,6 +3,7 @@
  * readPin is used, to get info from potentiometer
  *  
  * Try changing minFrequency and maxFrequency values
+ * If you use Passive buzzer instead of Active, the sound is much more melodic and less painfull
  */
 
 
