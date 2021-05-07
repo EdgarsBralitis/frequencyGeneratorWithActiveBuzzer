@@ -32,7 +32,7 @@ void loop() {
   
   valueRead = analogRead(readPin);
   
-  frequency = long(float(maxFrequency - minFrequency)/float(maxValueRead) * float(valueRead));
+  frequency = minFrequency + long(float(maxFrequency - minFrequency)/float(maxValueRead) * float(valueRead));
   buzzingTime = 1000000/(frequency + 1);
   if (frequency == 0) buzzingTime = 0;
 
